@@ -24,7 +24,7 @@ mkdir my_build_dir ; cd my_build_dir
    make install      ! Copy library and include files to other directories
 ```
 
-The reason is the installers does detailed checking of the memory subsystem of the machine and creates and highly optimized library for the machine you are going to use.
+The reason is the installers does detailed checking of the memory subsystem of the machine and creates an highly optimized library for your platform you are going to use, so you will see many messages like the one below   
 
 ```
 BEST MU-TUNED GENERATED KERNEL FOR imf=4: NU=20, MU=2, MF=3355.25
@@ -52,6 +52,9 @@ DONE BASIC KERNEL TESTS:
    900000:sr1_sse.c (M=870, N=8, lda=875) gets 2458.83 MFLOPS
    900000:sr1_sse.c (M=870, N=8, lda=875) gets 2489.47 MFLOPS
 ```
+
+for details I recommend to read the ATLAS Guide from   
+https://fossies.org/linux/atlas/doc/atlas_install.pdf
 
 
 
