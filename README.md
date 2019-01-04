@@ -24,5 +24,35 @@ mkdir my_build_dir ; cd my_build_dir
    make install      ! Copy library and include files to other directories
 ```
 
+The reason is the installers does detailed checking of the memory subsystem of the machine and creates and highly optimized library for the machine you are going to use.
+
+```
+BEST MU-TUNED GENERATED KERNEL FOR imf=4: NU=20, MU=2, MF=3355.25
+
+BEGIN BASIC KERNEL TESTS:
+   Kernel sr1_C.c(900000) passes basic test
+DONE BASIC KERNEL TESTS:
+
+BEGIN NU/MU EXTRACT SEARCH, imf=4:
+
+BEGIN BASIC KERNEL TESTS:
+   Kernel sr1_sse.c(900000) passes basic test
+   Kernel sr1_sse.c(900000) passes basic test
+   Kernel sr1_sse.c(900000) passes basic test
+   Kernel sr1_sse.c(900000) passes basic test
+   Kernel sr1_sse.c(900000) passes basic test
+   Kernel sr1_sse.c(900000) passes basic test
+   Kernel sr1_sse.c(900000) passes basic test
+   Kernel sr1_sse.c(900000) passes basic test
+   Kernel sr1_sse.c(900000) passes basic test
+   Kernel sr1_sse.c(900000) passes basic test
+DONE BASIC KERNEL TESTS:
+
+   900000:sr1_sse.c (M=870, N=8, lda=875) gets 2551.06 MFLOPS
+   900000:sr1_sse.c (M=870, N=8, lda=875) gets 2458.83 MFLOPS
+   900000:sr1_sse.c (M=870, N=8, lda=875) gets 2489.47 MFLOPS
+```
+
+
 
 
