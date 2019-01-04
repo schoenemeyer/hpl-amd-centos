@@ -1,4 +1,4 @@
-# Install and Run the HPL Linpack on a CentOS Workstation with AMD FX(tm)-6300 Six-Core Processor
+# Install and run the HPL Linpack on a CentOS Workstation with AMD FX(tm)-6300 Six-Core Processor
 
 - Download the latest source from   
 http://www.netlib.org/benchmark/hpl/
