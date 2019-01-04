@@ -12,3 +12,19 @@ sudo yum install -y openblas-devel.x86_64 openblas.x86_64
 
 ./configure
 
+Another Option is to install the Atlas Library. This Library can be downloaded from    
+https://sourceforge.net/projects/math-atlas/
+
+You need to go through a quite lengthy installation procedure that might take more than 24 hours.
+```
+mkdir my_build_dir ; cd my_build_dir
+   /path/to/ATLAS/configure [flags]
+   make              ! tune and compile library
+   make check        ! perform sanity tests
+   make ptcheck      ! checks of threaded code for multiprocessor systems
+   make time         ! provide performance summary as % of clock rate
+   make install      ! Copy library and include files to other directories
+```
+
+
+
