@@ -51,10 +51,26 @@ DONE BASIC KERNEL TESTS:
    900000:sr1_sse.c (M=870, N=8, lda=875) gets 2551.06 MFLOPS
    900000:sr1_sse.c (M=870, N=8, lda=875) gets 2458.83 MFLOPS
    900000:sr1_sse.c (M=870, N=8, lda=875) gets 2489.47 MFLOPS
+......
+......
+......
+
+
+ATLAS install complete.  Examine 
+ATLAS/bin/<arch>/INSTALL_LOG/SUMMARY.LOG for details.
+make[1]: Leaving directory `/home/thomas/libs/my_build'
+make clean
+make[1]: Entering directory `/home/thomas/libs/my_build'
+rm -f *.o x* config?.out *core*
+make[1]: Leaving directory `/home/thomas/libs/my_build'
+[thomas@localhost my_build]$ 
+      
 ```
 
 for details I recommend to read the ATLAS Guide from   
 https://fossies.org/linux/atlas/doc/atlas_install.pdf
+
+
 
 
 
