@@ -81,6 +81,43 @@ You can adjust the HPL.dat to get some decent performance. Make sure that PxQ is
 ```
 mpirun -np 4 ./xhpl
 ```
+The result should look like the lines below. The result was achieved with Openmpi 1.10.7 and Atlas 3.10.3:   
+```
+--------------------------------------------------------------------------------
 
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
 
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11C2R4       16152   192     3     2              75.74              3.710e+01
+HPL_pdgesv() start time Fri Jan  4 16:43:20 2019
+
+HPL_pdgesv() end time   Fri Jan  4 16:44:36 2019
+
+--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV-
+Max aggregated wall time rfact . . . :               1.92
++ Max aggregated wall time pfact . . :               0.73
++ Max aggregated wall time mxswp . . :               0.58
+Max aggregated wall time update  . . :              73.92
++ Max aggregated wall time laswp . . :               8.10
+Max aggregated wall time up tr sv  . :               0.12
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0012292 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================
+[thomas@localhost Linux_Debian_ATLAS]$ 
+```
 
