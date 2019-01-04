@@ -70,8 +70,17 @@ make[1]: Leaving directory `/home/thomas/libs/my_build'
 for details I recommend to read the ATLAS Guide from   
 https://fossies.org/linux/atlas/doc/atlas_install.pdf
 
+- Change to the HPL directory
 
-
+pick the most appropiate Makefile in the setup directory and adapt to your platform (Math Lib and MPI)
+```
+make arch=Linux_Debian_ATLAS
+cd bin/Linux_Debian_ATLAS
+```
+You can adjust the HPL.dat to get some decent performance. Make sure that PxQ is equivalent to the number of cores for the run.
+```
+mpirun -np 4 ./xhpl
+```
 
 
 
