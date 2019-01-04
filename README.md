@@ -120,4 +120,8 @@ End of Tests.
 ================================================================================
 [thomas@localhost Linux_Debian_ATLAS]$ 
 ```
+You can use a CUDA optimized version
+
+https://developer.nvidia.com/rdp/assets/cuda-accelerated-linpack-linux64
+
 
